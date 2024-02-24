@@ -28,6 +28,6 @@ describe("HomeComponent", () => {
   it("should navigate to AuthComponent on button click", () => {
     spyOn(router, "navigate");
     component.atAuth();
-    expect(router.navigate).toHaveBeenCalledWith(["/Auth"]);
+    expect(router.navigate).toHaveBeenCalledWith(["auth"]);
   });
 });
