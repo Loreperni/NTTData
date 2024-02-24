@@ -15,8 +15,8 @@ export class AuthComponent {
     gender: "",
     status: "active",
   };
-  user: User;
-  tokenKey: string;
+  user!: User;
+  tokenKey!: string;
   constructor(private router: Router, private http: HttpService) {}
 
   login() {
